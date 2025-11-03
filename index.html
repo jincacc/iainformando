@@ -1,49 +1,84 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <!-- ===== META / SEO PRO ===== -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- ====== SEO PRO — IAINFORMANDO ====== -->
   <title>IAINFORMANDO — Defesa, Geopolítica e Tecnologia Militar</title>
-  <meta name="description" content="Notícias e análises verificadas sobre defesa, geopolítica e tecnologia militar no Brasil e no mundo.">
-  <link rel="canonical" href="https://iainformando.netlify.app/">
+  <meta name="description" content="Cobertura diária de defesa, geopolítica e tecnologia militar no Brasil e no mundo. Análises, bastidores e notícias verificadas.">
+  <link rel="canonical" href="https://serene-creponne-fefe82.netlify.app/">
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <meta name="googlebot" content="index,follow">
   <meta name="theme-color" content="#0f172a">
 
-  <!-- Open Graph / Twitter -->
+  <!-- Ícones -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- Open Graph -->
   <meta property="og:site_name" content="IAINFORMANDO">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:type" content="website">
   <meta property="og:title" content="IAINFORMANDO — Defesa, Geopolítica e Tecnologia Militar">
-  <meta property="og:description" content="Cobertura diária de defesa e geopolítica com credibilidade.">
-  <meta property="og:url" content="https://iainformando.netlify.app/">
-  <meta property="og:image" content="https://picsum.photos/1200/630?random=99">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:description" content="Notícias e análises verificadas sobre defesa e geopolítica.">
+  <meta property="og:url" content="https://serene-creponne-fefe82.netlify.app/">
+  <meta property="og:image" content="https://serene-creponne-fefe82.netlify.app/images/capa-og.jpg">
+  <meta property="og:image:secure_url" content="https://serene-creponne-fefe82.netlify.app/images/capa-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="IAINFORMANDO — capa">
 
-  <!-- JSON-LD (Organização) -->
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IAINFORMANDO — Defesa, Geopolítica e Tecnologia Militar">
+  <meta name="twitter:description" content="Notícias e análises verificadas sobre defesa e geopolítica.">
+  <meta name="twitter:image" content="https://serene-creponne-fefe82.netlify.app/images/capa-og.jpg">
+  <!-- <meta name="twitter:site" content="@SeuPerfil"> -->
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="pt-BR" href="https://serene-creponne-fefe82.netlify.app/">
+  <link rel="alternate" hreflang="x-default" href="https://serene-creponne-fefe82.netlify.app/">
+
+  <!-- Sitemap (opcional) -->
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+  <!-- Structured Data — Organization -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"IAINFORMANDO",
-    "url":"https://iainformando.netlify.app/",
-    "logo":"https://iainformando.netlify.app/images/logo-512.png",
-    "sameAs": ["https://youtube.com/@iainformando?si=5HVclrA815kDq-qD"]
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "IAINFORMANDO",
+    "url": "https://serene-creponne-fefe82.netlify.app/",
+    "logo": "https://serene-creponne-fefe82.netlify.app/images/logo-512.png",
+    "sameAs": ["https://www.youtube.com/@IAinformando"]
   }
   </script>
+
+  <!-- Structured Data — WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "IAINFORMANDO",
+    "url": "https://serene-creponne-fefe82.netlify.app/"
+  }
+  </script>
+  <!-- ====== /SEO PRO ====== -->
 
   <style>
     :root{
       --bg:#ffffff; --text:#0f172a; --muted:#475569; --brand:#0ea5e9; --header:#0b1220; --headerText:#f8fafc; --accent:#e2e8f0;
-      --card:#ffffff; --shadow:0 10px 25px rgba(2,6,23,.08); --radius:16px;
+      --card:#ffffff; --shadow:0 10px 25px rgba(2,6,23,.08);
+      --radius:16px;
     }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;scroll-behavior:smooth}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
     a{color:var(--brand);text-decoration:none}
     img{max-width:100%;display:block;border-radius:12px}
     .container{max-width:1200px;margin:0 auto;padding:20px}
 
-    /* Header / Nav */
+    /* Header */
     header{background:var(--header);color:var(--headerText);position:sticky;top:0;z-index:50;box-shadow:var(--shadow)}
     .topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px}
     .logo{font-weight:800;letter-spacing:.5px;font-size:22px}
@@ -51,29 +86,32 @@
     .search{flex:1;max-width:420px}
     .search input{width:100%;padding:10px 12px;border-radius:999px;border:1px solid #1f2937;background:#0f172a;color:#e5e7eb}
 
+    /* Nav */
     nav{background:#0f172a}
     .nav{display:flex;gap:18px;align-items:center;overflow:auto;padding:10px 20px}
-    .nav a{color:#e2e8f0;white-space:nowrap;font-weight:600;position:relative}
-    .nav a.active{color:#93c5fd}
-
-    /* Submenu */
+    .nav a{color:#e2e8f0;white-space:nowrap;font-weight:600}
+    .nav a:hover{color:#93c5fd}
+    /* submenu */
     .has-sub{position:relative}
     .has-sub > a::after{content:"▾";margin-left:6px;font-size:12px}
     .submenu{position:absolute;left:0;top:calc(100% + 8px);background:#0b1220;border:1px solid #1f2937;border-radius:10px;padding:10px;display:none;min-width:220px;box-shadow:var(--shadow)}
     .submenu a{display:block;padding:8px 10px;border-radius:8px}
     .has-sub:hover .submenu{display:block}
 
-    /* Seções / Cards */
-    section{scroll-margin-top:90px}
+    /* Hero Destaque */
     .hero{display:grid;grid-template-columns:2fr 1fr;gap:20px;margin:20px 0}
     .card{background:var(--card);border:1px solid var(--accent);padding:16px;border-radius:var(--radius);box-shadow:var(--shadow)}
     .eyebrow{font-size:12px;font-weight:800;color:#2563eb;letter-spacing:.08em;text-transform:uppercase}
     h1{margin:.2em 0 .4em 0;font-size:30px;line-height:1.2}
     .meta{color:var(--muted);font-size:14px}
+
+    /* Layout principal */
     .grid{display:grid;grid-template-columns:2fr 1fr;gap:24px}
     .post{display:grid;grid-template-columns:140px 1fr;gap:14px;padding:12px;border-bottom:1px solid var(--accent)}
     .post h3{margin:0;font-size:18px}
     .post .meta{font-size:13px}
+
+    /* Sidebar */
     .widget{background:var(--card);border:1px solid var(--accent);padding:16px;border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:16px}
     .widget h4{margin:0 0 10px 0}
     .pill{display:inline-block;padding:6px 10px;border:1px solid var(--accent);border-radius:999px;margin:6px 6px 0 0;font-size:14px}
@@ -83,264 +121,134 @@
     footer .container{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;padding:30px 20px}
     footer a{color:#e2e8f0}
 
-    /* Form / Botão */
-    input,textarea,button{font:inherit}
-    .btn{padding:12px 18px;border-radius:10px;border:0;background:#0ea5e9;color:#fff;font-weight:700;cursor:pointer}
-
-    /* Mobile */
+    /* Responsivo */
     @media (max-width: 960px){
-      .hero,.grid{grid-template-columns:1fr}
+      .hero, .grid{grid-template-columns:1fr}
       .post{grid-template-columns:120px 1fr}
       nav .nav{flex-wrap:nowrap}
-      .submenu{position:static;border:0;padding:6px 0;background:transparent;display:none}
-      .has-sub.open .submenu{display:block}
-      .has-sub > a::after{content:"▸"}
-      .has-sub.open > a::after{content:"▾"}
     }
   </style>
 </head>
 <body>
-  <!-- ===== HEADER ===== -->
   <header>
     <div class="topbar container">
       <div class="logo">IAINFORMANDO <small>Revista de Defesa & Geopolítica</small></div>
-      <div class="search"><input id="q" placeholder="Pesquisar no site… (Enter)" aria-label="Pesquisar"></div>
+      <div class="search"><input placeholder="Pesquisar no site…" aria-label="Pesquisar" /></div>
     </div>
     <nav>
-      <div class="nav container" id="main-nav">
-        <a href="#home" data-route>Home</a>
+      <div class="nav container">
+        <a href="#">Últimas Notícias</a>
         <div class="has-sub">
-          <a href="#forcas" data-route>Forças Armadas</a>
+          <a href="#">Forças Armadas</a>
           <div class="submenu">
-            <a href="#exercito" data-route>Exército</a>
-            <a href="#marinha" data-route>Marinha</a>
-            <a href="#aeronautica" data-route>Aeronáutica</a>
+            <a href="#">Exército</a>
+            <a href="#">Marinha</a>
+            <a href="#">Aeronáutica</a>
           </div>
         </div>
-        <a href="#noticias" data-route>Notícias</a>
-        <a href="#geopolitica" data-route>Geopolítica</a>
-        <a href="#tecnologia" data-route>Tecnologia Militar</a>
-        <a href="#sobre" data-route>Sobre</a>
-        <a href="#contato" data-route>Contato</a>
+        <a href="#">Defesa & Segurança</a>
+        <a href="#">Geopolítica</a>
+        <a href="#">Tecnologia Militar</a>
+        <a href="#">Concursos & Cursos</a>
+        <a href="#">Gente & Cultura</a>
       </div>
     </nav>
   </header>
 
-  <!-- ===== CONTEÚDO ===== -->
   <main class="container">
-    <!-- HOME -->
-    <section id="home">
-      <div class="hero">
-        <article class="card">
-          <img src="https://picsum.photos/960/540?random=12" alt="Imagem destaque" loading="eager" width="960" height="540">
-          <div class="eyebrow">Destaque</div>
-          <h1>Gripen realiza nova etapa de testes no litoral brasileiro</h1>
-          <p class="meta">Por Redação • 02 nov 2025 • Força Aérea</p>
-          <p>O caça F-39 avançou no cronograma de validações sobre o Atlântico. Veja o que muda para a doutrina e a frota.</p>
+    <!-- HERO / DESTAQUE: troque a imagem, título e texto -->
+    <section class="hero">
+      <article class="card">
+        <img src="https://picsum.photos/960/540?random=12" alt="Imagem destaque" />
+        <div class="eyebrow">Destaque</div>
+        <h1>Gripen realiza nova etapa de testes no litoral brasileiro</h1>
+        <p class="meta">Por Redação • 02 nov 2025 • Força Aérea</p>
+        <p>O caça F-39 avançou no cronograma de validações sobre o Atlântico. Veja o que muda para a doutrina e a frota.</p>
+      </article>
+      <aside class="card">
+        <h3 style="margin-top:0">Mais do Destaque</h3>
+        <div class="post" style="border:0;padding:0">
+          <img src="https://picsum.photos/240/160?random=31" alt="" />
+          <div>
+            <h3>Marinha ativa navio-patrulha modernizado</h3>
+            <div class="meta">Marinha • 02 nov 2025</div>
+          </div>
+        </div>
+        <div class="post" style="border:0;padding:0;margin-top:10px">
+          <img src="https://picsum.photos/240/160?random=32" alt="" />
+          <div>
+            <h3>Exército conclui exercício de interoperabilidade</h3>
+            <div class="meta">Exército • 01 nov 2025</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- LISTA + SIDEBAR -->
+    <section class="grid">
+      <div>
+        <!-- Lista de notícias (6–12 itens). Duplique <article> para mais itens. -->
+        <article class="post">
+          <img src="https://picsum.photos/240/160?random=1" alt="" />
+          <div>
+            <a class="eyebrow" href="#">Últimas Notícias</a>
+            <h3><a href="#">Força Aérea recebe lote de equipamentos eletrônicos</a></h3>
+            <div class="meta">02 nov 2025 • Aeronáutica</div>
+          </div>
         </article>
-        <aside class="card">
-          <h3 style="margin-top:0">Mais em Destaque</h3>
-          <div class="post" style="border:0;padding:0">
-            <img src="https://picsum.photos/240/160?random=31" alt="" loading="lazy" width="240" height="160">
-            <div>
-              <h3>Marinha ativa navio-patrulha modernizado</h3>
-              <div class="meta">Marinha • 02 nov 2025</div>
-            </div>
+        <article class="post">
+          <img src="https://picsum.photos/240/160?random=2" alt="" />
+          <div>
+            <a class="eyebrow" href="#">Últimas Notícias</a>
+            <h3><a href="#">Marinha testa sistema de drones de superfície</a></h3>
+            <div class="meta">02 nov 2025 • Marinha</div>
           </div>
-          <div class="post" style="border:0;padding:0;margin-top:10px">
-            <img src="https://picsum.photos/240/160?random=32" alt="" loading="lazy" width="240" height="160">
-            <div>
-              <h3>Exército conclui exercício de interoperabilidade</h3>
-              <div class="meta">Exército • 01 nov 2025</div>
-            </div>
+        </article>
+        <article class="post">
+          <img src="https://picsum.photos/240/160?random=3" alt="" />
+          <div>
+            <a class="eyebrow" href="#">Tecnologia Militar</a>
+            <h3><a href="#">Radar nacional de varredura eletrônica bate marco</a></h3>
+            <div class="meta">01 nov 2025 • Indústria</div>
           </div>
-        </aside>
+        </article>
+        <article class="post">
+          <img src="https://picsum.photos/240/160?random=4" alt="" />
+          <div>
+            <a class="eyebrow" href="#">Geopolítica</a>
+            <h3><a href="#">Exercício conjunto reforça presença no Atlântico Sul</a></h3>
+            <div class="meta">01 nov 2025 • Opinião</div>
+          </div>
+        </article>
       </div>
 
-      <section class="grid">
-        <div>
-          <article class="post">
-            <img src="https://picsum.photos/240/160?random=1" alt="" loading="lazy" width="240" height="160">
-            <div>
-              <a class="eyebrow" href="#noticias" data-route>Últimas Notícias</a>
-              <h3><a href="#" data-external>Força Aérea recebe lote de equipamentos eletrônicos</a></h3>
-              <div class="meta">02 nov 2025 • Aeronáutica</div>
-            </div>
-          </article>
-          <article class="post">
-            <img src="https://picsum.photos/240/160?random=2" alt="" loading="lazy" width="240" height="160">
-            <div>
-              <a class="eyebrow" href="#noticias" data-route>Tecnologia Militar</a>
-              <h3><a href="#" data-external>Radar nacional de varredura eletrônica bate marco</a></h3>
-              <div class="meta">01 nov 2025 • Indústria</div>
-            </div>
-          </article>
+      <aside>
+        <div class="widget">
+          <h4>Pesquisar</h4>
+          <input style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--accent)" placeholder="Buscar…" />
         </div>
-        <aside>
-          <div class="widget"><h4>Categorias</h4>
-            <a class="pill" href="#noticias" data-route>Últimas Notícias</a>
-            <a class="pill" href="#exercito" data-route>Exército</a>
-            <a class="pill" href="#marinha" data-route>Marinha</a>
-            <a class="pill" href="#aeronautica" data-route>Aeronáutica</a>
-          </div>
-        </aside>
-      </section>
-    </section>
-
-    <!-- NOTÍCIAS -->
-    <section id="noticias" hidden>
-      <h1>Notícias</h1>
-      <p id="count" class="meta"></p>
-      <article class="post">
-        <img src="https://picsum.photos/240/160?random=41" alt="" loading="lazy" width="240" height="160">
-        <div>
-          <a class="eyebrow" href="#aeronautica" data-route>Aeronáutica</a>
-          <h3><a href="#" data-external>Força Aérea recebe lote de equipamentos eletrônicos</a></h3>
-          <div class="meta">02 nov 2025 • Aeronáutica</div>
+        <div class="widget">
+          <h4>Categorias</h4>
+          <a class="pill" href="#">Últimas Notícias</a>
+          <a class="pill" href="#">Forças Armadas</a>
+          <a class="pill" href="#">Defesa & Segurança</a>
+          <a class="pill" href="#">Geopolítica</a>
+          <a class="pill" href="#">Tecnologia Militar</a>
+          <a class="pill" href="#">Concursos & Cursos</a>
+          <a class="pill" href="#">Gente & Cultura</a>
         </div>
-      </article>
-      <article class="post">
-        <img src="https://picsum.photos/240/160?random=42" alt="" loading="lazy" width="240" height="160">
-        <div>
-          <a class="eyebrow" href="#marinha" data-route>Marinha</a>
-          <h3><a href="#" data-external>Marinha testa sistema de drones de superfície</a></h3>
-          <div class="meta">02 nov 2025 • Marinha</div>
+        <div class="widget">
+          <h4>Posts recentes</h4>
+          <ul style="list-style:none;padding:0;margin:0">
+            <li><a href="#">HMS Bullock: ficha técnica e classe</a></li>
+            <li><a href="#">Navio holandês com Gripen chega ao Brasil</a></li>
+            <li><a href="#">Calendário de concursos militares</a></li>
+          </ul>
         </div>
-      </article>
-      <article class="post">
-        <img src="https://picsum.photos/240/160?random=43" alt="" loading="lazy" width="240" height="160">
-        <div>
-          <a class="eyebrow" href="#tecnologia" data-route>Indústria</a>
-          <h3><a href="#" data-external>Radar nacional de varredura eletrônica bate marco</a></h3>
-          <div class="meta">01 nov 2025 • Indústria</div>
-        </div>
-      </article>
-    </section>
-
-    <!-- FORÇAS (hub) -->
-    <section id="forcas" hidden>
-      <h1>Forças Armadas</h1>
-      <section class="grid">
-        <div>
-          <article class="post">
-            <img src="https://picsum.photos/240/160?random=51" alt="Exército" loading="lazy" width="240" height="160">
-            <div>
-              <a class="eyebrow" href="#exercito" data-route>Exército</a>
-              <h3><a href="#exercito" data-route>Destaques do Exército Brasileiro</a></h3>
-              <div class="meta">Atualizado • Hoje</div>
-            </div>
-          </article>
-          <article class="post">
-            <img src="https://picsum.photos/240/160?random=52" alt="Marinha" loading="lazy" width="240" height="160">
-            <div>
-              <a class="eyebrow" href="#marinha" data-route>Marinha</a>
-              <h3><a href="#marinha" data-route>Operações Navais e Indústria</a></h3>
-              <div class="meta">Atualizado • Hoje</div>
-            </div>
-          </article>
-          <article class="post">
-            <img src="https://picsum.photos/240/160?random=53" alt="Aeronáutica" loading="lazy" width="240" height="160">
-            <div>
-              <a class="eyebrow" href="#aeronautica" data-route>Aeronáutica</a>
-              <h3><a href="#aeronautica" data-route>Aviação de Caça e Logística</a></h3>
-              <div class="meta">Atualizado • Hoje</div>
-            </div>
-          </article>
-        </div>
-        <aside>
-          <div class="widget"><h4>Pesquisar</h4>
-            <input style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--accent)" placeholder="Buscar…" id="q-forcas">
-          </div>
-        </aside>
-      </section>
-    </section>
-
-    <!-- EXÉRCITO -->
-    <section id="exercito" hidden>
-      <nav class="meta" style="margin:12px 0"><a href="#home" data-route>Home</a> › <a href="#forcas" data-route>Forças Armadas</a> › Exército</nav>
-      <section class="hero">
-        <article class="card">
-          <img src="https://picsum.photos/960/540?random=201" alt="Exército Brasileiro" loading="lazy" width="960" height="540">
-          <div class="eyebrow">Exército</div>
-          <h1>Destaques do Exército Brasileiro</h1>
-          <p class="meta">Por Redação • Atualizado hoje</p>
-          <p>Programas de modernização, exercícios de interoperabilidade e novos meios em foco.</p>
-        </article>
-      </section>
-    </section>
-
-    <!-- MARINHA -->
-    <section id="marinha" hidden>
-      <nav class="meta" style="margin:12px 0"><a href="#home" data-route>Home</a> › <a href="#forcas" data-route>Forças Armadas</a> › Marinha</nav>
-      <section class="hero">
-        <article class="card">
-          <img src="https://picsum.photos/960/540?random=301" alt="Marinha do Brasil" loading="lazy" width="960" height="540">
-          <div class="eyebrow">Marinha</div>
-          <h1>Operações Navais e Indústria</h1>
-          <p class="meta">Por Redação • Atualizado hoje</p>
-          <p>Novas plataformas, modernizações e exercícios combinados no Atlântico Sul.</p>
-        </article>
-      </section>
-    </section>
-
-    <!-- AERONÁUTICA -->
-    <section id="aeronautica" hidden>
-      <nav class="meta" style="margin:12px 0"><a href="#home" data-route>Home</a> › <a href="#forcas" data-route>Forças Armadas</a> › Aeronáutica</nav>
-      <section class="hero">
-        <article class="card">
-          <img src="https://picsum.photos/960/540?random=401" alt="Força Aérea Brasileira" loading="lazy" width="960" height="540">
-          <div class="eyebrow">Aeronáutica</div>
-          <h1>Aviação de Caça e Logística</h1>
-          <p class="meta">Por Redação • Atualizado hoje</p>
-          <p>Integração de meios, doutrina de emprego e aquisição de capacidades estratégicas.</p>
-        </article>
-      </section>
-    </section>
-
-    <!-- GEOPOLÍTICA -->
-    <section id="geopolitica" hidden>
-      <h1>Geopolítica</h1>
-      <p>Contexto internacional, alianças, dissuasão e interesses no Atlântico Sul.</p>
-    </section>
-
-    <!-- TECNOLOGIA -->
-    <section id="tecnologia" hidden>
-      <h1>Tecnologia Militar</h1>
-      <p>Radar AESA, guerra eletrônica, mísseis, propulsão e sistemas C4ISR.</p>
-    </section>
-
-    <!-- SOBRE -->
-    <section id="sobre" hidden>
-      <h1>Sobre</h1>
-      <p>O IAINFORMANDO cobre defesa, geopolítica e tecnologia militar com foco em informação verificada e contexto estratégico.</p>
-      <p class="meta">
-        Oficiais:
-        <a href="https://youtube.com/@iainformando?si=5HVclrA815kDq-qD" target="_blank" rel="noopener">YouTube</a> •
-        <a href="mailto:criaff0403@gmail.com">E-mail</a> •
-        <a href="https://wa.me/5531992923944" target="_blank" rel="noopener">WhatsApp</a>
-      </p>
-    </section>
-
-    <!-- CONTATO (Netlify Forms) -->
-    <section id="contato" hidden>
-      <h1>Contato</h1>
-      <form name="contato" method="POST" data-netlify="true" action="#contato" class="card" id="form-contato">
-        <input type="hidden" name="form-name" value="contato">
-        <label>Nome<br><input name="nome" required style="width:100%;padding:10px;border:1px solid var(--accent);border-radius:10px"></label><br><br>
-        <label>E-mail<br><input type="email" name="email" required style="width:100%;padding:10px;border:1px solid var(--accent);border-radius:10px"></label><br><br>
-        <label>Assunto<br><input name="assunto" style="width:100%;padding:10px;border:1px solid var(--accent);border-radius:10px"></label><br><br>
-        <label>Mensagem<br><textarea name="mensagem" required rows="6" style="width:100%;padding:10px;border:1px solid var(--accent);border-radius:10px"></textarea></label><br><br>
-        <button type="submit" class="btn">Enviar</button>
-        <p id="ok" class="meta" style="display:none;margin-top:10px">Mensagem enviada! Obrigado pelo contato.</p>
-      </form>
-      <p class="meta">Ou fale direto:
-        <a href="mailto:criaff0403@gmail.com">criaff0403@gmail.com</a> •
-        <a href="https://wa.me/5531992923944" target="_blank" rel="noopener">WhatsApp</a>
-      </p>
+      </aside>
     </section>
   </main>
 
-  <!-- FOOTER -->
   <footer>
     <div class="container">
       <div>
@@ -348,80 +256,28 @@
         <p>Notícias, análises e bastidores de Defesa & Geopolítica no Brasil.</p>
       </div>
       <div>
-        <p><a href="#sobre" data-route>Sobre</a><br>
-        <a href="#contato" data-route>Contato</a><br>
-        <a href="#noticias" data-route>Notícias</a></p>
+        <p><a href="#">Sobre</a><br><a href="#">Contato</a><br><a href="#">Anuncie</a></p>
       </div>
       <div>
-        <p><a href="https://wa.me/5531992923944" target="_blank" rel="noopener">WhatsApp</a><br>
-        <a href="mailto:criaff0403@gmail.com">E-mail</a><br>
-        <a href="https://youtube.com/@iainformando?si=5HVclrA815kDq-qD" target="_blank" rel="noopener">YouTube</a></p>
+        <p><a href="#">Política de Privacidade</a><br><a href="#">Termos de Uso</a></p>
       </div>
     </div>
   </footer>
 
+  <!-- JS só para interação do submenu em telas touch (mantém tudo em 1 arquivo) -->
   <script>
-  // ===== Submenu mobile (toque) =====
-  document.querySelectorAll('.has-sub > a').forEach(el=>{
-    el.addEventListener('click', ev=>{
-      if (window.innerWidth < 960){
-        ev.preventDefault();
-        const parent = el.closest('.has-sub');
-        const open = parent.classList.contains('open');
-        document.querySelectorAll('.has-sub').forEach(s=>s.classList.remove('open'));
-        if(!open) parent.classList.add('open');
-      }
+    // Ativa toque para abrir submenu em mobile sem precisar de :hover
+    document.querySelectorAll('.has-sub > a').forEach(function(el){
+      el.addEventListener('click', function(ev){
+        if(window.innerWidth < 960){
+          ev.preventDefault();
+          var box = this.parentElement.querySelector('.submenu');
+          var open = box.style.display === 'block';
+          document.querySelectorAll('.submenu').forEach(s=>s.style.display='none');
+          box.style.display = open ? 'none' : 'block';
+        }
+      });
     });
-  });
-
-  // ===== SPA simples por hash =====
-  const routes=['home','noticias','forcas','exercito','marinha','aeronautica','geopolitica','tecnologia','sobre','contato'];
-  function show(h){
-    const id=(h||'#home').slice(1)||'home';
-    routes.forEach(r=>{
-      const el=document.getElementById(r);
-      if(el) el.hidden=(r!==id);
-    });
-    document.querySelectorAll('[data-route]').forEach(a=>a.classList.toggle('active', a.getAttribute('href')==='#'+id));
-    window.scrollTo({top:0,behavior:'instant'});
-  }
-  addEventListener('hashchange',()=>show(location.hash));
-  show(location.hash);
-
-  // ===== Busca (Enter) -> vai para Notícias e filtra =====
-  const q=document.getElementById('q');
-  if(q){
-    q.addEventListener('keypress',e=>{
-      if(e.key==='Enter'){
-        location.hash='#noticias';
-        setTimeout(()=>{
-          const t=q.value.toLowerCase(); let hits=0;
-          document.querySelectorAll('#noticias .post').forEach(n=>{
-            const ok=n.innerText.toLowerCase().includes(t);
-            n.style.display = t ? (ok?'grid':'none') : 'grid';
-            if(ok) hits++;
-          });
-          const c=document.getElementById('count'); if(c) c.textContent = t ? `${hits} resultado(s)` : '';
-        },50);
-      }
-    });
-  }
-
-  // ===== Form Netlify com feedback local =====
-  const form=document.getElementById('form-contato');
-  if(form){
-    form.addEventListener('submit', async (e)=>{
-      e.preventDefault();
-      const data=new FormData(form);
-      try{
-        await fetch('/',{method:'POST',body:data});
-        form.reset();
-        document.getElementById('ok').style.display='block';
-      }catch(_){
-        alert('Erro ao enviar. Tente novamente.');
-      }
-    });
-  }
   </script>
 </body>
 </html>
