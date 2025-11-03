@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- ====== SEO PRO — IAINFORMANDO ====== -->
+  <title>IAINFORMANDO — Defesa, Geopolítica e Tecnologia Militar</title>
+  <meta name="description" content="Cobertura diária de defesa, geopolítica e tecnologia militar no Brasil e no mundo. Análises, bastidores e notícias verificadas.">
+  <link rel="canonical" href="https://serene-creponne-fefe82.netlify.app/">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <meta name="googlebot" content="index,follow">
+  <meta name="theme-color" content="#0f172a">
+
+  <!-- Ícones -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="IAINFORMANDO">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="IAINFORMANDO — Defesa, Geopolítica e Tecnologia Militar">
+  <meta property="og:description" content="Notícias e análises verificadas sobre defesa e geopolítica.">
+  <meta property="og:url" content="https://serene-creponne-fefe82.netlify.app/">
+  <meta property="og:image" content="https://serene-creponne-fefe82.netlify.app/images/capa-og.jpg">
+  <meta property="og:image:secure_url" content="https://serene-creponne-fefe82.netlify.app/images/capa-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="IAINFORMANDO — capa">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IAINFORMANDO — Defesa, Geopolítica e Tecnologia Militar">
+  <meta name="twitter:description" content="Notícias e análises verificadas sobre defesa e geopolítica.">
+  <meta name="twitter:image" content="https://serene-creponne-fefe82.netlify.app/images/capa-og.jpg">
+  <!-- <meta name="twitter:site" content="@SeuPerfil"> -->
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="pt-BR" href="https://serene-creponne-fefe82.netlify.app/">
+  <link rel="alternate" hreflang="x-default" href="https://serene-creponne-fefe82.netlify.app/">
+
+  <!-- Sitemap (opcional) -->
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+  <!-- Structured Data — Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "IAINFORMANDO",
+    "url": "https://serene-creponne-fefe82.netlify.app/",
+    "logo": "https://serene-creponne-fefe82.netlify.app/images/logo-512.png",
+    "sameAs": ["https://www.youtube.com/@IAinformando"]
+  }
+  </script>
+
+  <!-- Structured Data — WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "IAINFORMANDO",
+    "url": "https://serene-creponne-fefe82.netlify.app/"
+  }
+  </script>
+  <!-- ====== /SEO PRO ====== -->
+
+  <style>
+    :root{
+      --bg:#ffffff; --text:#0f172a; --muted:#475569; --brand:#0ea5e9; --header:#0b1220; --headerText:#f8fafc; --accent:#e2e8f0;
+      --card:#ffffff; --shadow:0 10px 25px rgba(2,6,23,.08);
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    a{color:var(--brand);text-decoration:none}
+    img{max-width:100%;display:block;border-radius:12px}
+    .container{max-width:1200px;margin:0 auto;padding:20px}
+
+    /* Header */
+    header{background:var(--header);color:var(--headerText);position:sticky;top:0;z-index:50;box-shadow:var(--shadow)}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px}
+    .logo{font-weight:800;letter-spacing:.5px;font-size:22px}
+    .logo small{opacity:.7;font-weight:600;font-size:12px;display:block}
+    .search{flex:1;max-width:420px}
+    .search input{width:100%;padding:10px 12px;border-radius:999px;border:1px solid #1f2937;background:#0f172a;color:#e5e7eb}
+
+    /* Nav */
+    nav{background:#0f172a}
+    .nav{display:flex;gap:18px;align-items:center;overflow:auto;padding:10px 20px}
+    .nav a{color:#e2e8f0;white-space:nowrap;font-weight:600}
+    .nav a:hover{color:#93c5fd}
+    /* submenu */
+    .has-sub{position:relative}
+    .has-sub > a::after{content:"▾";margin-left:6px;font-size:12px}
+    .submenu{position:absolute;left:0;top:calc(100% + 8px);background:#0b1220;border:1px solid #1f2937;border-radius:10px;padding:10px;display:none;min-width:220px;box-shadow:var(--shadow)}
+    .submenu a{display:block;padding:8px 10px;border-radius:8px}
+    .has-sub:hover .submenu{display:block}
+
+    /* Hero Destaque */
+    .hero{display:grid;grid-template-columns:2fr 1fr;gap:20px;margin:20px 0}
+    .card{background:var(--card);border:1px solid var(--accent);padding:16px;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .eyebrow{font-size:12px;font-weight:800;color:#2563eb;letter-spacing:.08em;text-transform:uppercase}
+    h1{margin:.2em 0 .4em 0;font-size:30px;line-height:1.2}
+    .meta{color:var(--muted);font-size:14px}
+
+    /* Layout principal */
+    .grid{display:grid;grid-template-columns:2fr 1fr;gap:24px}
+    .post{display:grid;grid-template-columns:140px 1fr;gap:14px;padding:12px;border-bottom:1px solid var(--accent)}
+    .post h3{margin:0;font-size:18px}
+    .post .meta{font-size:13px}
+
+    /* Sidebar */
+    .widget{background:var(--card);border:1px solid var(--accent);padding:16px;border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:16px}
+    .widget h4{margin:0 0 10px 0}
+    .pill{display:inline-block;padding:6px 10px;border:1px solid var(--accent);border-radius:999px;margin:6px 6px 0 0;font-size:14px}
+
+    /* Footer */
+    footer{margin-top:40px;background:#0f172a;color:#cbd5e1}
+    footer .container{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;padding:30px 20px}
+    footer a{color:#e2e8f0}
+
+    /* Responsivo */
+    @media (max-width: 960px){
+      .hero, .grid{grid-template-columns:1fr}
+      .post{grid-template-columns:120px 1fr}
+      nav .nav{flex-wrap:nowrap}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar container">
+      <div class="logo">IAINFORMANDO <small>Revista de Defesa & Geopolítica</small></div>
+      <div class="search"><input placeholder="Pesquisar no site…" aria-label="Pesquisar" /></div>
+    </div>
+    <nav>
+      <div class="nav container">
+        <a href="#">Últimas Notícias</a>
+        <div class="has-sub">
+          <a href="#">Forças Armadas</a>
+          <div class="submenu">
+            <a href="#">Exército</a>
+            <a href="#">Marinha</a>
+            <a href="#">Aeronáutica</a>
+          </div>
+        </div>
+        <a href="#">Defesa & Segurança</a>
+        <a href="#">Geopolítica</a>
+        <a href="#">Tecnologia Militar</a>
+        <a href="#">Concursos & Cursos</a>
+        <a href="#">Gente & Cultura</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HERO / DESTAQUE: troque a imagem, título e texto -->
+    <section class="hero">
+      <article class="card">
+        <img src="https://picsum.photos/960/540?random=12" alt="Imagem destaque" />
+        <div class="eyebrow">Destaque</div>
+        <h1>Gripen realiza nova etapa de testes no litoral brasileiro</h1>
+        <p class="meta">Por Redação • 02 nov 2025 • Força Aérea</p>
+        <p>O caça F-39 avançou no cronograma de validações sobre o Atlântico. Veja o que muda para a doutrina e a frota.</p>
+      </article>
+      <aside class="card">
+        <h3 style="margin-top:0">Mais do Destaque</h3>
+        <div class="post" style="border:0;padding:0">
+          <img src="https://picsum.photos/240/160?random=31" alt="" />
+          <div>
+            <h3>Marinha ativa navio-patrulha modernizado</h3>
+            <div class="meta">Marinha • 02 nov 2025</div>
+          </div>
+        </div>
+        <div class="post" style="border:0;padding:0;margin-top:10px">
+          <img src="https://picsum.photos/240/160?random=32" alt="" />
+          <div>
+            <h3>Exército conclui exercício de interoperabilidade</h3>
+            <div class="meta">Exército • 01 nov 2025</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- LISTA + SIDEBAR -->
+    <section class="grid">
+      <div>
+        <!-- Lista de notícias (6–12 itens). Duplique <article> para mais itens. -->
+        <article class="post">
+          <img src="https://picsum.photos/240/160?random=1" alt="" />
+          <div>
+            <a class="eyebrow" href="#">Últimas Notícias</a>
+            <h3><a href="#">Força Aérea recebe lote de equipamentos eletrônicos</a></h3>
+            <div class="meta">02 nov 2025 • Aeronáutica</div>
+          </div>
+        </article>
+        <article class="post">
+          <img src="https://picsum.photos/240/160?random=2" alt="" />
+          <div>
+            <a class="eyebrow" href="#">Últimas Notícias</a>
+            <h3><a href="#">Marinha testa sistema de drones de superfície</a></h3>
+            <div class="meta">02 nov 2025 • Marinha</div>
+          </div>
+        </article>
+        <article class="post">
+          <img src="https://picsum.photos/240/160?random=3" alt="" />
+          <div>
+            <a class="eyebrow" href="#">Tecnologia Militar</a>
+            <h3><a href="#">Radar nacional de varredura eletrônica bate marco</a></h3>
+            <div class="meta">01 nov 2025 • Indústria</div>
+          </div>
+        </article>
+        <article class="post">
+          <img src="https://picsum.photos/240/160?random=4" alt="" />
+          <div>
+            <a class="eyebrow" href="#">Geopolítica</a>
+            <h3><a href="#">Exercício conjunto reforça presença no Atlântico Sul</a></h3>
+            <div class="meta">01 nov 2025 • Opinião</div>
+          </div>
+        </article>
+      </div>
+
+      <aside>
+        <div class="widget">
+          <h4>Pesquisar</h4>
+          <input style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--accent)" placeholder="Buscar…" />
+        </div>
+        <div class="widget">
+          <h4>Categorias</h4>
+          <a class="pill" href="#">Últimas Notícias</a>
+          <a class="pill" href="#">Forças Armadas</a>
+          <a class="pill" href="#">Defesa & Segurança</a>
+          <a class="pill" href="#">Geopolítica</a>
+          <a class="pill" href="#">Tecnologia Militar</a>
+          <a class="pill" href="#">Concursos & Cursos</a>
+          <a class="pill" href="#">Gente & Cultura</a>
+        </div>
+        <div class="widget">
+          <h4>Posts recentes</h4>
+          <ul style="list-style:none;padding:0;margin:0">
+            <li><a href="#">HMS Bullock: ficha técnica e classe</a></li>
+            <li><a href="#">Navio holandês com Gripen chega ao Brasil</a></li>
+            <li><a href="#">Calendário de concursos militares</a></li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>
+        <strong>IAINFORMANDO</strong>
+        <p>Notícias, análises e bastidores de Defesa & Geopolítica no Brasil.</p>
+      </div>
+      <div>
+        <p><a href="#">Sobre</a><br><a href="#">Contato</a><br><a href="#">Anuncie</a></p>
+      </div>
+      <div>
+        <p><a href="#">Política de Privacidade</a><br><a href="#">Termos de Uso</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS só para interação do submenu em telas touch (mantém tudo em 1 arquivo) -->
+  <script>
+    // Ativa toque para abrir submenu em mobile sem precisar de :hover
+    document.querySelectorAll('.has-sub > a').forEach(function(el){
+      el.addEventListener('click', function(ev){
+        if(window.innerWidth < 960){
+          ev.preventDefault();
+          var box = this.parentElement.querySelector('.submenu');
+          var open = box.style.display === 'block';
+          document.querySelectorAll('.submenu').forEach(s=>s.style.display='none');
+          box.style.display = open ? 'none' : 'block';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
